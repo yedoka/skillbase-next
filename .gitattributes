@@ -1,0 +1,19 @@
+# Store every text file with LF in the repository and check it out with LF,
+# regardless of core.autocrlf on the machine. Without this an archive round-trip
+# through Windows rewrites all 199 tracked files as CRLF-only diffs.
+* text=auto eol=lf
+
+# Binaries: never touch the bytes.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.mp4   binary
+*.webm  binary
+*.pdf   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
